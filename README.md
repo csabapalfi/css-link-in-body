@@ -45,9 +45,8 @@ Some browsers can be 'convinced' to follow the behaviour described above by addi
 ```
 
 * this will deliberately block parsing after that link tag
-* and forces the browser to wait for pending stylesheets
-* but prevents the browser from discovering other style links below
-* therefore no render-blocking because of style links below
+* forces the browser to wait for pending stylesheets
+* prevents the browser from discovering other style links below therefore no render-blocking because of style links below
 
 ## Browser support
 
