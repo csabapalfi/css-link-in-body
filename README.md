@@ -37,14 +37,17 @@ e.g. in the example above `header` will render straight away then `main` will re
 
 ## The empty `<script>` tag 'polyfill'
 
-Some browsers can be 'convinced' to follow the behaviour described above.
-
-By deliberately blocking parsing with an empty script tag which will allow rendering (by preventing the browser from discovering other style links below).
+Some browsers can be 'convinced' to follow the behaviour described above by adding an empty `<script>` tag after the style link in your body:
 
 ```html
   <link rel="stylesheet" href="/main.css"><script> </script>
   <main>...</main>
 ```
+
+* this will deliberately block parsing after that link tag
+* and forces the browser to wait for pending stylesheets
+* but prevents the browser from discovering other style links below
+* therefore no render-blocking because of style links below
 
 ## Browser support
 
