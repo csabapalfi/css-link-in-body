@@ -30,7 +30,9 @@ e.g. in the example above `header` will render straight away then `main` will re
 
 ### The empty `<script>` tag 'polyfill'
 
-Some browsers can be 'convinced' to follow the behaviour described above by deliberately blocking parsing (after a link tag in body) with an empty script tag which will allow rendering.
+Some browsers can be 'convinced' to follow the behaviour described above.
+
+By deliberately blocking parsing with an empty script tag which will allow rendering (by preventing the browser from discovering other style links below).
 
 ```html
   <link rel="stylesheet" href="/main.css"><script> </script>
