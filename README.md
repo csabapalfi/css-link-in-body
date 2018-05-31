@@ -15,11 +15,13 @@ Simply place your style link tags in body.
 
 ```html
 <head>
-    <style>/* header styles */</style><!-- embedded/inlined critical styles - will not block rendering -->
+    <!-- embedded/inlined critical styles - will not block rendering -->
+    <style>/* header styles */</style>
 </head>
 <body>
   <header>...</header>
-  <link rel="stylesheet" href="/main.css"><!-- link in body - will not block rendering for anything above-->
+  <!-- link in body - will not block rendering for anything above-->
+  <link rel="stylesheet" href="/main.css">
   <main>...</main>
 </body>
 ```
