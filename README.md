@@ -57,7 +57,7 @@ Checked some manually for now:
 
 ✅ supported - ☑️ supported with empty script 'polyfill' - ❌ not supported
 
-| Browser              |    |
+|                      |    |
 |----------------------|:--:|
 | Chrome 69 (Canary)   | ✅ |
 | Edge 17              | ✅ |
