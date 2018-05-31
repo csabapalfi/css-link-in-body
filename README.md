@@ -55,9 +55,7 @@ TODO:
 
 Checked some manually for now:
 
-* ✅ supported
-* ☑️ supported with empty script 'polyfill'
-* ❌ not supported
+✅ supported - ☑️ supported with empty script 'polyfill' - ❌ not supported
 
 | Browser              |    |
 |----------------------|:--:|
