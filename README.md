@@ -65,7 +65,6 @@ Checked some manually for now:
 | Edge 17              | ✅ |
 | Firefox 60           | ✅ |
 | macOS Safari 11.1    | ☑️ |
-| Chrome 67            | ❌ |
 | iOS Safari 11.3      | ❌ |
 
 ## Read more
