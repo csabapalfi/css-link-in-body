@@ -61,7 +61,7 @@ Checked some manually for now:
 
 |                      |    |
 |----------------------|:--:|
-| Chrome 69 (Canary)   | ✅ |
+| Chrome 69            | ✅ |
 | Edge 17              | ✅ |
 | Firefox 60           | ✅ |
 | macOS Safari 11.1    | ☑️ |
