@@ -1,4 +1,4 @@
-# The future of CSS loading
+# Demo: non-render-blocking CSS link in body
 
 CSS links (`<link rel="stylesheet" ...>`) in `<body>` should not block rendering of any markup above them.
 
