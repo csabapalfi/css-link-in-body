@@ -1,4 +1,4 @@
-# Demo: non-render-blocking CSS link in body
+# Non-render-blocking CSS link in body
 
 CSS links (`<link rel="stylesheet" ...>`) in `<body>` should not block rendering of any markup above them.
 
