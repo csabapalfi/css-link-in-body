@@ -1,7 +1,31 @@
 const {createReadStream, readFileSync} = require('fs');
 const url = require('url');
 
-const htmlTemplate = readFileSync('index.html', 'utf-8');
+const htmlTemplate = `
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CSS link in body test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            width: 100vw;
+            height: 20vh;
+        }
+    </style>
+    </head>
+
+    <body>
+        {content}
+    </body>
+
+</html>
+`
 
 function sendFile(response, path, contentType) {
   response.writeHead(200, {'Content-Type': contentType});
@@ -17,7 +41,7 @@ function sendHtml(response, scripts) {
       '{content}',
       colors.map((color, index) => `
         <link rel="stylesheet" href="test.css?index=${index + 1}&delay=${index * 1000}&color=${color}" />
-        <div></div>${scripts ? '<script> </script>' : ''}`
+        ${scripts ? '<script> </script>' : ''}<div></div>`
       ).join('\n')
     )
   );
