@@ -1,4 +1,3 @@
-const http = require('http');
 const {createReadStream, readFileSync} = require('fs');
 const url = require('url');
 
@@ -36,7 +35,7 @@ function sendStyles(response, {delay = 0, index, color}) {
 }
 
 
-const server = http.createServer((request, response) => {
+const handler = (request, response) => {
   const {url: path, method} = request;
   console.log(method, path);
 
@@ -55,7 +54,12 @@ const server = http.createServer((request, response) => {
       response.writeHead(404);
       response.end();
   }
-});
+}
+module.exports = handler;
 
-server.on('error', (err) => console.error(err));
-server.listen(8080);
+if (require.main === module) {
+  const http = require('http');
+  const server = http.createServer(handler);
+  server.on('error', (err) => console.error(err));
+  server.listen(8080);
+}
