@@ -2,9 +2,8 @@
 
 CSS links (`<link rel="stylesheet" ...>`) in `<body>` should not block rendering of any markup above them.
 
-This repo is a small test page to verify/check render-blocking.
+This is a small demo page to verify/check render-blocking: https://css-link-in-body-git-master.csabapalfi.now.sh/
 
-No npm dependencies, just do `node index.js` and hit [localhost:8080](http://localhost:8080/).
 
 ## But why?
 
@@ -50,10 +49,7 @@ Some browsers can be 'convinced' to follow the behaviour described above by addi
 
 ## Browser support
 
-TODO:
-
-* [ ] add a script that loads this page in various browsers via SauceLabs or BrowserStack
-* [ ] grab a video or somehow do an automated check
+TODO: Keep this up-to-date and maybe even automate it better
 
 Checked some manually for now:
 
